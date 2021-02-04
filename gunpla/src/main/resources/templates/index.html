@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Mechanic</title>
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+				<th>name</th>
+				<th>model</th>
+				<th>manufacturer</th>
+				<th>armor</th>
+				<th>height</th>
+                <th>weight</th>
+			</tr>
+            <tr th:each="unit: ${mechanic}">
+                <td th:text="${unit.name}">default</td>
+                <td th:text="${unit.model}">default</td>
+                <td th:text="${unit.manufacturer}">default</td>
+                <td th:text="${unit.armor}">default</td>
+                <td th:text="${unit.height}">default</td>
+                <td th:text="${unit.weight}">default</td>
+            </tr>
+		</table>        
+    </body>
+</html>
